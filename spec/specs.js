@@ -3,6 +3,10 @@ describe('pigLatinize', function() {
     expect(pigLatinize("apple")).to.equal("appleay");
   });
 
+  it("check if the begins with one consonants moves the first consonant to the end adds AY after.", function(){
+    expect(pigLatinize("photography")).to.equal("hotographypay");
+  });
+
   it("check if the begins with one or more consonants, move all of the first consecutive ones to the end, and add AY after.", function(){
     expect(pigLatinize("photography")).to.equal("otographyphay");
   });

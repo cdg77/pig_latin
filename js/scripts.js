@@ -4,6 +4,9 @@ var pigLatinize = function(string){
     var pigstring = string.concat("ay");
     return pigstring;
   } else {
-    return false;
+    var stringArray = sting.split('');
+
+    
+
     }
 }

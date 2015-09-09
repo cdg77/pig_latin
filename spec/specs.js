@@ -3,7 +3,7 @@ describe('pigLatinize', function() {
     expect(pigLatinize("apple")).to.equal("appleay");
   });
 
-  it("check if the begins with one or more consonants, move the first consecutive one to the end and add AY after it.", function(){
+  it("check if the begins with one or more consonants, move all of the first consecutive ones to the end, and add AY after.", function(){
     expect(pigLatinize("photography")).to.equal("otographyphay");
   });
 });
